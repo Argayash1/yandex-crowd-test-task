@@ -1,30 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Страница о Международном васюкинском турнире по шахматам, который преобразит город Васюки"
-    />
-    <meta
-      property="og:title"
-      content="Международный васюкинский турнир по шахматам"
-    />
-    <meta
-      property="og:url"
-      content="https://argayash1.github.io/yandex-crowd-test-task/"
-    />
-    <meta property="og:image" content="icon.svg" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" href="icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <title>Международный васюкинский турнир по шахматам</title>
-  </head>
-  <body>
-    <div class="page">
-      <header class="header"></header>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Страница о Международном васюкинском турнире по шахматам, который преобразит город Васюки" />
+  <meta property="og:title" content="Международный васюкинский турнир по шахматам" />
+  <meta property="og:url" content="https://argayash1.github.io/yandex-crowd-test-task/" />
+  <meta property="og:image" content="icon.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <title>Международный васюкинский турнир по шахматам</title>
+</head>
+
+<body class="body">
+  <div class="page">
+    <header class="header">
+      <div class="content-wrapper">
+        <img src="./images/header-logo.svg" alt="Логотип Клуба четырёх коней" class="header__logo" />
+      </div>
+    </header>
+    <main class="content">
+      <section class="lead">
+        <div class="content-wrapper">
+          <h1 class="lead__title">
+            Превратите уездный город
+            <span class="lead__span">в столицу</span>
+            <span class="lead__span lead__span_align_right">земного шара</span>
+          </h1>
+          <p class="lead__subtitle">
+            Оплатите взнос на телеграммы для организации Международного
+            васюкинского турнира по шахматам
+          </p>
+          <nav>
+            <ul>
+              <li>
+                <a href="#support" class="lead__button">
+                  <span class="lead__button-text">Поддержать шахматную мысль</span>
+                </a>
+              </li>
+              <li>
+                <a href="#support" class="lead__button lead__button_type_learn">
+                  <span class="lead__button-text">Подробнее<br />о турнире
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="running-line">
+          <ul class="running-line__list">
+            <li class="running-line__list-item">
+              Дело помощи утопающим — дело рук самих утопающих!
+            </li>
+            <li class="running-line__list-item">
+              Шахматы двигают вперед не только культуру, но и экономику!
+            </li>
+            <li class="running-line__list-item">
+              Лед тронулся, господа присяжные заседатели!
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="support" class="support">
+        <div class="content-wrapper">
+          <div class="support__lecture">
+            <h3 class="support__title">
+              Чтобы поддержать Международный васюкинский турнир посетите
+              лекцию на тему:
+              <span class="support__title-span">&laquo;Плодотворная дебютная идея&raquo;</span>
+            </h3>
+            <img src="./images/support-tournament-image.png" alt="Лекция о шахматах" class="support__lecture-image" />
+          </div>
+          <div class="support__game">
+            <img src="./images/support-game-image.png" alt="" class="support__game-image" />
+            <h3 class="support__title support__title_type_game">
+              и Сеанс
+              <span class="support__title-span">одновременной игры в&nbsp;шахматы на 160 досках</span>
+              гроссмейстера О.Бендера
+            </h3>
+            <table class="support__game-table">
+              <tr>
+                <th class="support__game-table-header support__game-table-header_type_first">Место проведения:</th>
+                <td class="support__game-table-data support__game-table-data_type_first">Клуб «Картонажник»</td>
+              </tr>
+              <tr>
+                <th class="support__game-table-header">
+                  Дата и время мероприятия:
+                </th>
+                <td class="support__game-table-data">
+                  22 июня 1927 г. в 18:00
+                </td>
+              </tr>
+              <tr>
+                <th class="support__game-table-header">
+                  Стоимость входных билетов:
+                </th>
+                <td class="support__game-table-data">20 коп.</td>
+              </tr>
+              <tr>
+                <th class="support__game-table-header">Плата за игру:</th>
+                <td class="support__game-table-data">50 коп.</td>
+              </tr>
+              <tr>
+                <th class="support__game-table-header">
+                  Взнос на телеграммы:
+                </th>
+                <td class="support__game-table-data">
+                  <span>100 руб.</span>21 руб. 16 коп.
+                </td>
+              </tr>
+            </table>
+            <p class="section-subtitle">По всем вопросам обращаться в администрацию к К. Михельсону</p>
+          </div>
+        </div>
+      </section>
+      <section class="stages">
+        <div class="content-wrapper">
+          <h2>Этапы преображения Васюков</h2>
+          <p class="section-subtitle">Будущие источники обогащения васюкинцев</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="content-wrapper">
+        <p class="footer__paragraph">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям
+          сайта. С подробностями
+          можно
+          познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

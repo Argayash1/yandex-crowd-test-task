@@ -1,0 +1,18 @@
+.running-line__list-item {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Merriweather", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.running-line__list-item::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: -18px;
+  top: 9px;
+}

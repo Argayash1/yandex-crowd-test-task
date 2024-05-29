@@ -1,0 +1,10 @@
+.support__title {
+  width: 764px;
+  font-family: "Merriweather", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.35;
+  margin: 26px 0 0;
+  padding: 0;
+  text-transform: uppercase;
+}

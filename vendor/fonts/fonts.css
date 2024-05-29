@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("GolosText-Medium.eot");
+  src: local("Golos Text Medium"), local("GolosText-Medium"),
+    url("GolosText-Medium.eot?#iefix") format("embedded-opentype"),
+    url("GolosText-Medium.woff2") format("woff2"),
+    url("GolosText-Medium.woff") format("woff"),
+    url("GolosText-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("GolosText-DemiBold.eot");
+  src: local("Golos Text DemiBold"), local("GolosText-DemiBold"),
+    url("GolosText-DemiBold.eot?#iefix") format("embedded-opentype"),
+    url("GolosText-DemiBold.woff2") format("woff2"),
+    url("GolosText-DemiBold.woff") format("woff"),
+    url("GolosText-DemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("GolosText-Regular.eot");
+  src: local("Golos Text Regular"), local("GolosText-Regular"),
+    url("GolosText-Regular.eot?#iefix") format("embedded-opentype"),
+    url("GolosText-Regular.woff2") format("woff2"),
+    url("GolosText-Regular.woff") format("woff"),
+    url("GolosText-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("GolosText-Bold.eot");
+  src: local("Golos Text Bold"), local("GolosText-Bold"),
+    url("GolosText-Bold.eot?#iefix") format("embedded-opentype"),
+    url("GolosText-Bold.woff2") format("woff2"),
+    url("GolosText-Bold.woff") format("woff"),
+    url("GolosText-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("Merriweather-Regular.eot");
+  src: local("Merriweather Regular"), local("Merriweather-Regular"),
+    url("Merriweather-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Merriweather-Regular.woff2") format("woff2"),
+    url("Merriweather-Regular.woff") format("woff"),
+    url("Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("Merriweather-Bold.eot");
+  src: local("Merriweather Bold"), local("Merriweather-Bold"),
+    url("Merriweather-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Merriweather-Bold.woff2") format("woff2"),
+    url("Merriweather-Bold.woff") format("woff"),
+    url("Merriweather-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("Montserrat-Medium.eot");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-Medium.woff2") format("woff2"),
+    url("Montserrat-Medium.woff") format("woff"),
+    url("Montserrat-Medium.ttf") format("truetype");
+}

@@ -1,0 +1,13 @@
+.running-line {
+  overflow: hidden;
+  background-color: #f54932;
+  color: #fff;
+  white-space: nowrap;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+  margin-top: 132px;
+}

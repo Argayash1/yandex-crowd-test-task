@@ -1,0 +1,10 @@
+.lead__subtitle {
+  width: 542px;
+  text-align: center;
+  margin: 24px 0 40px;
+  padding: 0;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+}

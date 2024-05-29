@@ -1,0 +1,6 @@
+.support__game {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 474px auto;
+  column-gap: 44px;
+}
