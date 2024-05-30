@@ -1,0 +1,9 @@
+.stage-card__text {
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 100%;
+  margin: 0;
+  white-space: pre-wrap;
+}

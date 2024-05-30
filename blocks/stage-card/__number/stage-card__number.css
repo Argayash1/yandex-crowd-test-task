@@ -1,0 +1,13 @@
+.stage-card__number {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 60px;
+  text-align: center;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  padding-top: 5.5px;
+  box-sizing: border-box;
+}

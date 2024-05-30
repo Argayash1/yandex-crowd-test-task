@@ -3,3 +3,8 @@
   color: #1f1f1f;
   border: 2px solid #1f1f1f;
 }
+
+.lead__button_type_learn:hover {
+  color: #fff;
+  background-color: #1f1f1f;
+}

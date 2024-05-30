@@ -1,0 +1,21 @@
+.stages__list {
+  margin: 0;
+  padding: 54px 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 394px);
+  grid-template-rows: repeat(2, 112px) 136px;
+  gap: 20px;
+  position: relative;
+}
+
+.stages__list::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../../images/stages-airplane-image.png");
+  background-repeat: no-repeat;
+  width: 376.64px;
+  height: 230px;
+  bottom: 0;
+  right: 9.64px;
+}

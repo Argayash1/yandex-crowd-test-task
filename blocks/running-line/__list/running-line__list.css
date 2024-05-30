@@ -3,5 +3,12 @@
   gap: 30px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 100%;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  100% {
+    transform: translate(-100%, 0);
+  }
 }

@@ -1,11 +1,23 @@
 .lead__button {
   background-color: #1f1f1f;
   color: #ffffff;
-  width: 283px;
+  width: 263px;
   height: 72px;
   margin: 0;
-  padding: 0;
+  padding: 12px 49px;
   box-sizing: border-box;
+  text-align: center;
   border-radius: 66px;
-  border: none;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.lead__button:hover {
+  color: #1f1f1f;
+  background-color: #fbce51;
 }

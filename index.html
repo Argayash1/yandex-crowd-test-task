@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="global">
 
 <head>
   <meta charset="UTF-8" />
@@ -36,34 +36,21 @@
             Оплатите взнос на телеграммы для организации Международного
             васюкинского турнира по шахматам
           </p>
-          <nav>
-            <ul>
+          <nav class="lead__nav-menu">
+            <ul class="lead__nav-list">
               <li>
                 <a href="#support" class="lead__button">
-                  <span class="lead__button-text">Поддержать шахматную мысль</span>
+                  Поддержать шахматную мысль
                 </a>
               </li>
               <li>
-                <a href="#support" class="lead__button lead__button_type_learn">
-                  <span class="lead__button-text">Подробнее<br />о турнире
+                <a href="#stages" class="lead__button lead__button_type_learn">
+                  Подробнее<br />о турнире
                   </span>
                 </a>
               </li>
             </ul>
           </nav>
-        </div>
-        <div class="running-line">
-          <ul class="running-line__list">
-            <li class="running-line__list-item">
-              Дело помощи утопающим — дело рук самих утопающих!
-            </li>
-            <li class="running-line__list-item">
-              Шахматы двигают вперед не только культуру, но и экономику!
-            </li>
-            <li class="running-line__list-item">
-              Лед тронулся, господа присяжные заседатели!
-            </li>
-          </ul>
         </div>
       </section>
       <section id="support" class="support">
@@ -119,21 +106,48 @@
           </div>
         </div>
       </section>
-      <section class="stages">
+      <section id="stages" class="stages">
         <div class="content-wrapper">
-          <h2>Этапы преображения Васюков</h2>
-          <p class="section-subtitle">Будущие источники обогащения васюкинцев</p>
+          <h2 class="section-title">Этапы преображения Васюков</h2>
+          <p class="section-subtitle section-subtitle_type_stages">Будущие источники обогащения васюкинцев</p>
+          <ul class="stages__list"></ul>
+        </div>
+      </section>
+      <section class="participants">
+        <div class="content-wrapper">
+          <h2 class="section-title">Участники турнира</h2>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="content-wrapper">
         <p class="footer__paragraph">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям
-          сайта. С подробностями
-          можно
-          познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
+          сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать
+          стульев».</p>
       </div>
     </footer>
+    <template id="running-line-template">
+      <div class="running-line">
+        <ul class="running-line__list">
+          <li class="running-line__list-item">
+            Дело помощи утопающим — дело рук самих утопающих!
+          </li>
+          <li class="running-line__list-item">
+            Шахматы двигают вперед не только культуру, но и экономику!
+          </li>
+          <li class="running-line__list-item">
+            Лед тронулся, господа присяжные заседатели!
+          </li>
+        </ul>
+      </div>
+    </template>
+    <template id="stage-card-template">
+      <li class="stage-card">
+        <span class="stage-card__number"></span>
+        <p class="stage-card__text"></p>
+      </li>
+    </template>
+    <script src="./scripts/index.js" type="module"></script>
   </div>
 </body>
 
