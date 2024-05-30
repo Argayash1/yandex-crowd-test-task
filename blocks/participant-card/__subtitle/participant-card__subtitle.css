@@ -1,0 +1,9 @@
+.participant-card__subtitle {
+  margin: 0 0 20px;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  opacity: 0.6;
+}

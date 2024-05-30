@@ -115,7 +115,18 @@
       </section>
       <section class="participants">
         <div class="content-wrapper">
-          <h2 class="section-title">Участники турнира</h2>
+          <div class="participants__title-container">
+            <h2 class="section-title">Участники турнира</h2>
+            <div class="participants__buttons-container">
+              <button class="participants__button"></button>
+              <span class="participants__slide-number">3</span>
+              <span class="participants__slide-number participants__slide-number_type_all">/ 6</span>
+              <button class="participants__button"></button>
+            </div>
+          </div>
+          <div class="participants__slider">
+            <ul class="participants__list"></ul>
+          </div>
         </div>
       </section>
     </main>
@@ -145,6 +156,15 @@
       <li class="stage-card">
         <span class="stage-card__number"></span>
         <p class="stage-card__text"></p>
+      </li>
+    </template>
+    <template id="participant-card-template">
+      <li class="participant-card">
+        <img src="./images/participants-participant-image.png" alt="Изображение участника турнира"
+          class="participant-card__image">
+        <h3 class="participant-card__title"></h3>
+        <p class="participant-card__subtitle"></p>
+        <button class="participant-card__button">Подробнее</button>
       </li>
     </template>
     <script src="./scripts/index.js" type="module"></script>

@@ -1,0 +1,7 @@
+.participant-card {
+  min-width: 394px;
+  height: 462px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

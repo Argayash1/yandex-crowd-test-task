@@ -1,0 +1,8 @@
+.participant-card__title {
+  margin: 28px 0 6px;
+  padding: 0;
+  text-align: center;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}

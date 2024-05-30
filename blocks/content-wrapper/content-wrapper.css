@@ -2,6 +2,7 @@
   width: min(100%, 1366px);
   margin: 0 auto;
   padding-left: 72px;
+  padding-right: 72px;
   box-sizing: border-box;
   position: relative;
 }

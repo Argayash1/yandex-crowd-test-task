@@ -1,0 +1,20 @@
+.participant-card__button {
+  background-color: transparent;
+  border: 1px solid #3057a2;
+  border-radius: 62px;
+  margin: 0;
+  width: 113px;
+  height: 35px;
+  padding: 8px;
+  box-sizing: border-box;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.participant-card__button:hover {
+  background-color: #3057a2;
+  color: #fff;
+}
