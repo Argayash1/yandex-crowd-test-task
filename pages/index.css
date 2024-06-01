@@ -53,6 +53,7 @@
 @import url(../blocks/participants/__title-container/participants__title-container.css);
 @import url(../blocks/participants/__buttons-container/participants__buttons-container.css);
 @import url(../blocks/participants/__button/participants__button.css);
+@import url(../blocks/participants/__button/_type/participants__button_type_next.css);
 @import url(../blocks/participants/__slide-number/participants__slide-number.css);
 @import url(../blocks/participants/__slide-number/_type/participants__slide-number_type_all.css);
 @import url(../blocks/participants/__slider/participants__slider.css);

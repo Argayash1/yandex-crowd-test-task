@@ -13,10 +13,6 @@
   transition: background-color 0.2s ease;
 }
 
-.participants__button:first-child {
-  transform: rotate(180deg);
-}
-
 .participants__button:hover {
   background-color: #fbce51;
 }
