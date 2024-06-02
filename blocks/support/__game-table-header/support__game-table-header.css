@@ -1,8 +1,11 @@
 .support__game-table-header {
   text-align-last: left;
   font-weight: 400;
-  border-bottom: 2px solid #d0d0d0;
   border-right: 2px solid #d0d0d0;
-  padding: 16px 16px 16px 0;
+  padding: 15px 16px 15px 0;
+  margin: 0;
   width: 290px;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
 }

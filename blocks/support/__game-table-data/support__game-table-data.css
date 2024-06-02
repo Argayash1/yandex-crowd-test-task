@@ -1,7 +1,10 @@
 .support__game-table-data {
   font-weight: 600;
-  border-bottom: 2px solid #d0d0d0;
   box-sizing: border-box;
-  padding: 16px 0 16px 16px;
+  margin: 0;
+  padding: 15px 0 15px 16px;
   max-width: 398px;
+  font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
 }

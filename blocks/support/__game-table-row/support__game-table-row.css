@@ -1,0 +1,11 @@
+.support__game-table-row {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.support__game-table-row:last-of-type {
+  border-bottom: none;
+}
