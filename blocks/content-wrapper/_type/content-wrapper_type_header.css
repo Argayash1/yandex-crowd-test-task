@@ -1,0 +1,18 @@
+.content-wrapper_type_header {
+  position: relative;
+  z-index: 0;
+  font-size: 0;
+  height: 100%;
+}
+
+.content-wrapper_type_header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 881px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("../../../images/lead-baclground-image.png");
+  background-repeat: no-repeat;
+}

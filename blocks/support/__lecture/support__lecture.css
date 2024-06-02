@@ -1,4 +1,5 @@
 .support__lecture {
   display: flex;
   gap: 64px;
+  margin-left: 27px;
 }

@@ -1,3 +1,5 @@
 .lead__nav-menu {
   margin-bottom: 132px;
+  position: relative;
+  z-index: 10;
 }

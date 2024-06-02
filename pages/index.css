@@ -9,7 +9,11 @@
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
+
+@import url(../blocks/content/content.css);
 @import url(../blocks/content-wrapper/content-wrapper.css);
+@import url(../blocks/content-wrapper/_type/content-wrapper_type_header.css);
+@import url(../blocks/content-wrapper/_type/content-wrapper_type_support.css);
 
 @import url(../blocks/lead/lead.css);
 @import url(../blocks/lead/__title/lead__title.css);
@@ -32,6 +36,7 @@
 @import url(../blocks/support/__lecture/support__lecture.css);
 @import url(../blocks/support/__lecture-image/support__lecture-image.css);
 @import url(../blocks/support/__game/support__game.css);
+@import url(../blocks/support/__game-image-mask/support__game-image-mask.css);
 @import url(../blocks/support/__game-image/support__game-image.css);
 @import url(../blocks/support/__game-table/support__game-table.css);
 @import url(../blocks/support/__game-table-caption-hidden/support__game-table-caption-hidden.css);
@@ -42,6 +47,7 @@
 @import url(../blocks/support/__game-table-data/support__game-table-data.css);
 @import url(../blocks/support/__game-table-data/type/support__game-table-data_type_first.css);
 @import url(../blocks/support/__game-table-data/type/support__game-table-data_type_last.css);
+@import url(../blocks/support/__game-table-span/support__game-table-span.css);
 
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-subtitle/_type/section-subtitle_type_stages.css);

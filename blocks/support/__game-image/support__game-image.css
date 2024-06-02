@@ -1,6 +1,7 @@
 .support__game-image {
-  width: 474px;
-  height: 527px;
-  background-color: #fff;
+  width: 528px;
+  height: 609px;
   grid-row: 1/4;
+  object-fit: contain;
+  object-position: 0 10px;
 }

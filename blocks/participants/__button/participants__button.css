@@ -11,6 +11,7 @@
   padding: 0;
   border-radius: 50%;
   transition: background-color 0.2s ease;
+  margin-right: 14px;
 }
 
 .participants__button:hover {

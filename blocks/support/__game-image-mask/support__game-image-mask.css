@@ -1,0 +1,11 @@
+.support__game-image-mask {
+  background-image: url("../../../images/support-game-background-image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 528px;
+  height: 609px;
+}
