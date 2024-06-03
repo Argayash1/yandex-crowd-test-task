@@ -2,16 +2,15 @@
   background-image: url("../../../images/participants-button-image.svg");
   background-color: #313131;
   background-repeat: no-repeat;
-  background-size: 8.46px 16.92px;
-  background-position: center;
+  background-size: 12.46px 18.92px;
+  background-position: 14.08px center;
   width: 44px;
   height: 44px;
   border: none;
-  margin: 0;
+  margin: 0 14px 0 0;
   padding: 0;
   border-radius: 50%;
   transition: background-color 0.2s ease;
-  margin-right: 14px;
 }
 
 .participants__button:hover {

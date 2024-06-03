@@ -5,4 +5,6 @@
   font-family: "Golos Text", "Helvetica Neue", "Arial", sans-serif;
   font-weight: 600;
   font-size: 24px;
+  line-height: 1.2;
+  min-height: 29px;
 }

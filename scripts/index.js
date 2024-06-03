@@ -73,7 +73,7 @@ const setParticipantsSlideNumber = (slideNumber) => {
 };
 
 const setParticipantsCount = () => {
-  participantsCount.textContent = `/ ${participants.length}`;
+  participantsCount.textContent = `/  ${participants.length}`;
 };
 
 const renderElement = (wrapElement, createElementFunction, item = null) => {
