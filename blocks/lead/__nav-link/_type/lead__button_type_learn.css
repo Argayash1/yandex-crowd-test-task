@@ -1,10 +1,10 @@
-.lead__button_type_learn {
+.lead__nav-link_type_learn {
   background-color: transparent;
   color: #1f1f1f;
   border: 2px solid #1f1f1f;
 }
 
-.lead__button_type_learn:hover {
+.lead__nav-link_type_learn:hover {
   color: #fff;
   background-color: #1f1f1f;
 }

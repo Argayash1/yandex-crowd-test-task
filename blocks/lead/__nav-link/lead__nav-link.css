@@ -1,4 +1,4 @@
-.lead__button {
+.lead__nav-link {
   background-color: #1f1f1f;
   color: #ffffff;
   width: 263px;
@@ -17,7 +17,7 @@
   transition: color 0.2s linear, background-color 0.2s linear;
 }
 
-.lead__button:hover {
+.lead__nav-link:hover {
   color: #1f1f1f;
   background-color: #fbce51;
 }

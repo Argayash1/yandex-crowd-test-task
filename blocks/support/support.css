@@ -1,4 +1,5 @@
 .support {
   padding-top: 80px;
   background-color: #fff;
+  scroll-margin: -80px;
 }
