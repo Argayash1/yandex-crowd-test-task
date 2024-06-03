@@ -2,19 +2,32 @@
   background-color: #e9ded4;
   position: relative;
   font-size: 0;
-  height: 65px;
+  height: 64px;
   padding: 0;
   margin: 0;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 1628px;
+  height: 700px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-image: url("../../../images/lead-baclground-image.png");
+  background-repeat: no-repeat;
 }
 
 .header::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 881px;
+  height: 700px;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 2;
   background-image: url("../../../images/lead-baclground.png");
   mix-blend-mode: color-burn;
 }
