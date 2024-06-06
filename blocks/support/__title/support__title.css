@@ -6,4 +6,11 @@
   margin: 26.92px 0 0;
   padding: 0;
   text-transform: uppercase;
+  max-width: 764px;
+}
+
+@media screen and (max-width: 1259px) {
+  .support__title {
+    font-size: 32px;
+  }
 }

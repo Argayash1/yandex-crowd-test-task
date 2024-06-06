@@ -2,7 +2,7 @@
   font-weight: 400;
   font-size: 54px;
   line-height: 1.2;
-  width: 806px;
+  max-width: 806px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;

@@ -1,20 +1,32 @@
 .stage-card {
-  width: 100%;
-  height: 100%;
   background-image: url("../../images/stages-card-background.svg");
   display: flex;
   gap: 16px;
   padding: 20px;
   box-sizing: border-box;
+  min-height: 112px;
 }
 
 .stage-card:nth-child(3) {
-  grid-row: 1/3;
-  grid-column: 3/4;
-  height: 244px;
+  grid-row: span 2;
 }
 
 .stage-card:nth-child(7) {
-  grid-column: 2/4;
-  padding-right: 290px;
+  grid-column: span 2;
+}
+
+.stage-card:nth-child(7) .stage-card__text {
+  max-width: 446px;
+}
+
+@media screen and (max-width: 1059px) {
+  .stage-card:nth-child(3) {
+    grid-row: auto;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  .stage-card:nth-child(7) .stage-card__text {
+    max-width: 54%;
+  }
 }

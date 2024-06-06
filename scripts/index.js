@@ -40,15 +40,15 @@ const createElement = () => {
   return elementElement;
 };
 
-const createStageCard = (item) => {
+const createStageCard = (item, index) => {
   const stageCardElement = stageCardTemplate.cloneNode(true);
   const stageCardElementNumber = stageCardElement.querySelector(
     ".stage-card__number"
   );
   const stageCardElementText =
     stageCardElement.querySelector(".stage-card__text");
-  stageCardElementNumber.textContent = item.number;
-  stageCardElementText.textContent = item.text;
+  stageCardElementNumber.textContent = index + 1;
+  stageCardElementText.textContent = item;
 
   return stageCardElement;
 };
@@ -76,13 +76,30 @@ const setParticipantsCount = () => {
   participantsCount.textContent = `/  ${participants.length}`;
 };
 
-const renderElement = (wrapElement, createElementFunction, item = null) => {
-  const element = item ? createElementFunction(item) : createElementFunction();
+const renderElement = (
+  wrapElement,
+  createElementFunction,
+  item = null,
+  index = null
+) => {
+  const element = item
+    ? createElementFunction(item, index)
+    : createElementFunction();
   wrapElement.append(element);
 };
 
 const rollSlider = (slidesList, offset, sliderCount) => {
   slidesList.style.transform = `translateX(-${sliderCount * offset}px)`;
+};
+
+const setButtonsDisabled = (buttons, isNextButton, isButtonDisabled) => {
+  if (isNextButton) {
+    buttons.prevButton.disabled = false;
+    buttons.nextButton.disabled = isButtonDisabled ? true : false;
+  } else {
+    buttons.nextButton.disabled = false;
+    buttons.prevButton.disabled = isButtonDisabled ? true : false;
+  }
 };
 
 const changeToNextSlide = (slidesList, sliderCount, sliderButtons) => {
@@ -93,28 +110,35 @@ const changeToNextSlide = (slidesList, sliderCount, sliderButtons) => {
       .getComputedStyle(slidesList)
       .getPropertyValue("gap")
       .replace("px", "");
+  const isParticipantsSlider =
+    slidesList.classList.contains("participants__list");
 
   sliderCount++;
-  sliderButtons.prevButton.disabled = false;
 
-  if (sliderCount > slides.length - 3) {
+  const isNextSlideButtonDisabled = isParticipantsSlider
+    ? sliderCount === slides.length - 3
+    : sliderCount === slides.length;
+  const isPrevButtonDisabled = isParticipantsSlider
+    ? sliderCount > slides.length - 3
+    : sliderCount > slides.length;
+
+  setButtonsDisabled(sliderButtons, true, isNextSlideButtonDisabled);
+
+  if (isPrevButtonDisabled) {
     sliderCount = 0;
     sliderButtons.prevButton.disabled = true;
   }
 
   rollSlider(slidesList, offset, sliderCount);
 
-  if (slidesList.classList.contains("participants__list")) {
+  if (isParticipantsSlider) {
     participantsSlideNumber.textContent = sliderCount + 3;
-
-    sliderButtons.nextButton.disabled =
-      sliderCount === slides.length - 3 ? true : false;
   }
 
   return sliderCount;
 };
 
-const changeToPrevSlide = (slidesList, sliderCount, sliderPrevButton) => {
+const changeToPrevSlide = (slidesList, sliderCount, sliderButtons) => {
   const slides = slidesList.querySelectorAll("li");
   const offset =
     slides[0].offsetWidth +
@@ -124,8 +148,9 @@ const changeToPrevSlide = (slidesList, sliderCount, sliderPrevButton) => {
       .replace("px", "");
 
   sliderCount--;
+  const isPrevButtonDisabled = sliderCount === 0;
 
-  sliderPrevButton.disabled = sliderCount === 0 ? true : false;
+  setButtonsDisabled(sliderButtons, false, isPrevButtonDisabled);
 
   rollSlider(slidesList, offset, sliderCount);
 
@@ -139,8 +164,8 @@ const changeToPrevSlide = (slidesList, sliderCount, sliderPrevButton) => {
 renderElement(leadSectionElement, createElement);
 renderElement(participantsSectionElement, createElement);
 
-stagesCards.forEach((item) => {
-  renderElement(stagesListElement, createStageCard, item);
+stagesCards.forEach((item, index) => {
+  renderElement(stagesListElement, createStageCard, item, index);
 });
 
 participants.forEach((item) => {
@@ -162,7 +187,7 @@ participantsPrevButton.addEventListener("click", () => {
   participantsSliderCount = changeToPrevSlide(
     participantListElement,
     participantsSliderCount,
-    participantsPrevButton
+    { nextButton: participantsNextButton, prevButton: participantsPrevButton }
   );
 });
 

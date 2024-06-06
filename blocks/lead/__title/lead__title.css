@@ -6,4 +6,13 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  position: relative;
+  z-index: 4;
+}
+
+@media screen and (max-width: 1259px) {
+  .lead__title {
+    font-size: 54px;
+    max-width: 486px;
+  }
 }

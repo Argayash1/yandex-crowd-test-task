@@ -1,5 +1,5 @@
 .stage-card__number {
-  width: 36px;
+  min-width: 36px;
   height: 36px;
   display: inline-block;
   background-color: #fff;

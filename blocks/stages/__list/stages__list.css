@@ -1,12 +1,11 @@
 .stages__list {
+  position: relative;
   margin: 0;
   padding: 54px 0 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 394px);
-  grid-template-rows: repeat(2, 112px) 136px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  position: relative;
 }
 
 .stages__list::after {
@@ -18,4 +17,58 @@
   height: 230px;
   bottom: 3px;
   right: -38.36px;
+}
+
+@media screen and (max-width: 1325px) {
+  .stages__list::after {
+    background-size: contain;
+    bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 1246px) {
+  .stages__list::after {
+    width: 357.81px;
+    height: 218.5px;
+    bottom: 99px;
+  }
+}
+
+@media screen and (max-width: 1183px) {
+  .stages__list::after {
+    bottom: 131px;
+  }
+}
+
+@media screen and (max-width: 1121px) {
+  .stages__list::after {
+    width: 338.976px;
+    height: 207px;
+    bottom: 131px;
+    right: -70.36px;
+  }
+}
+
+@media screen and (max-width: 1059px) {
+  .stages__list::after {
+    bottom: -19px;
+    right: -38.36px;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .stages__list::after {
+    width: 335px;
+    height: 182px;
+    bottom: 24px;
+    right: -56.36px;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .stages__list::after {
+    width: 320.144px;
+    height: 195.5px;
+    bottom: 43px;
+  }
 }

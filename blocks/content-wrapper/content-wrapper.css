@@ -6,3 +6,10 @@
   box-sizing: border-box;
   position: relative;
 }
+
+@media screen and (max-width: 1365px) {
+  .content-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
