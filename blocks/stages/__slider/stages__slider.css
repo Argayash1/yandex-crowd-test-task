@@ -1,0 +1,12 @@
+.stages__slider {
+  margin-top: 54px;
+}
+
+@media screen and (max-width: 739px) {
+  .stages__slider {
+    overflow: hidden;
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,8 @@
+.stage__circle-buttons {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}

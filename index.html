@@ -114,7 +114,14 @@
         <div class="content-wrapper">
           <h2 class="section-title">Этапы преображения Васюков</h2>
           <p class="section-subtitle section-subtitle_type_stages">Будущие источники обогащения васюкинцев</p>
-          <ul class="stages__list"></ul>
+          <div class="stages__slider">
+            <ul class="stages__list"></ul>
+            <div class="stages__buttons-container">
+              <button class="slider-button slider-button_place_stages" disabled></button>
+              <ul class="stage__circle-buttons"></ul>
+              <button class="slider-button slider-button_type_next slider-button_place_stages"></button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="participants">
@@ -122,10 +129,10 @@
           <div class="participants__title-container">
             <h2 class="section-title section-title_type_participants">Участники турнира</h2>
             <div class="participants__buttons-container">
-              <button class="participants__button" disabled></button>
+              <button class="slider-button" disabled></button>
               <span class="participants__slide-number"></span>
               <span class="participants__slide-number participants__slide-number_type_all"></span>
-              <button class="participants__button participants__button_type_next"></button>
+              <button class="slider-button slider-button_type_next"></button>
             </div>
           </div>
           <div class="participants__slider">
@@ -160,6 +167,11 @@
       <li class="stage-card">
         <span class="stage-card__number"></span>
         <p class="stage-card__text"></p>
+      </li>
+    </template>
+    <template id="stage-circle-template">
+      <li class="stages__circle">
+        <button class="stages__circle-button"></button>
       </li>
     </template>
     <template id="participant-card-template">

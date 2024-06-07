@@ -2,8 +2,16 @@ import stagesCards from "./stagesCards.js";
 import { participants } from "./participants.js";
 
 const leadSectionElement = document.querySelector(".lead");
+const stagesSectionElement = document.querySelector(".stages");
+const stagesListElement = stagesSectionElement.querySelector(".stages__list");
+const stagesPrevButton = stagesSectionElement.querySelector(".slider-button");
+const stagesNextButton = stagesSectionElement.querySelector(
+  ".slider-button_type_next"
+);
+const stageCircleButtons = stagesSectionElement.querySelector(
+  ".stage__circle-buttons"
+);
 const participantsSectionElement = document.querySelector(".participants");
-const stagesListElement = document.querySelector(".stages__list");
 const participantListElement = participantsSectionElement.querySelector(
   ".participants__list"
 );
@@ -13,21 +21,21 @@ const participantsSlideNumber = participantsSectionElement.querySelector(
 const participantsCount = participantsSectionElement.querySelector(
   ".participants__slide-number_type_all"
 );
-const participantsPrevButton = participantsSectionElement.querySelector(
-  ".participants__button"
-);
+const participantsPrevButton =
+  participantsSectionElement.querySelector(".slider-button");
 const participantsNextButton = participantsSectionElement.querySelector(
-  ".participants__button_type_next"
+  ".slider-button_type_next"
 );
 
 const elementTemplate = document
   .querySelector("#running-line-template")
   .content.querySelector(".running-line");
-
 const stageCardTemplate = document
   .querySelector("#stage-card-template")
   .content.querySelector(".stage-card");
-
+const stageCircleTemplate = document
+  .querySelector("#stage-circle-template")
+  .content.querySelector(".stages__circle");
 const participantCardTemplate = document
   .querySelector("#participant-card-template")
   .content.querySelector(".participant-card");
@@ -51,6 +59,36 @@ const createStageCard = (item, index) => {
   stageCardElementText.textContent = item;
 
   return stageCardElement;
+};
+
+const createStageCircle = (index) => {
+  const stageCircleElement = stageCircleTemplate.cloneNode(true);
+  const stageCircleButton = stageCircleElement.querySelector(
+    ".stages__circle-button"
+  );
+
+  if (index === 0) {
+    stageCircleButton.classList.add("stages__circle-button_active");
+  }
+
+  stageCircleButton.addEventListener("click", () => {
+    const slides = stagesListElement.querySelectorAll("li");
+
+    stagesSliderCount = index;
+    rollSlider(
+      stagesListElement,
+      stagesSliderCount === 0 ? 375 : 355,
+      stagesSliderCount
+    );
+    changeToThisSlide(stagesSliderCount);
+    setButtonsDisabled(
+      { prevButton: stagesPrevButton, nextButton: stagesNextButton },
+      stagesSliderCount === 0,
+      stagesSliderCount === slides.length - 3
+    );
+  });
+
+  return stageCircleElement;
 };
 
 const createParticipantCard = (item) => {
@@ -84,6 +122,8 @@ const renderElement = (
 ) => {
   const element = item
     ? createElementFunction(item, index)
+    : index || index === 0
+    ? createElementFunction(index)
     : createElementFunction();
   wrapElement.append(element);
 };
@@ -92,70 +132,94 @@ const rollSlider = (slidesList, offset, sliderCount) => {
   slidesList.style.transform = `translateX(-${sliderCount * offset}px)`;
 };
 
-const setButtonsDisabled = (buttons, isNextButton, isButtonDisabled) => {
-  if (isNextButton) {
-    buttons.prevButton.disabled = false;
-    buttons.nextButton.disabled = isButtonDisabled ? true : false;
-  } else {
-    buttons.nextButton.disabled = false;
-    buttons.prevButton.disabled = isButtonDisabled ? true : false;
-  }
+const setButtonsDisabled = (
+  buttons,
+  isPrevButtonDisabled,
+  isNextButtonDisabled
+) => {
+  const { prevButton, nextButton } = buttons;
+
+  prevButton.disabled = isPrevButtonDisabled ? true : false;
+  nextButton.disabled = isNextButtonDisabled ? true : false;
 };
 
-const changeToNextSlide = (slidesList, sliderCount, sliderButtons) => {
+const changeToThisSlide = (index) => {
+  const circleButtons = stageCircleButtons.querySelectorAll("button");
+  circleButtons.forEach((circleButton) =>
+    circleButton.classList.remove("stages__circle-button_active")
+  );
+  circleButtons[index].classList.add("stages__circle-button_active");
+};
+
+const changeToNextSlide = (slideChangeParams) => {
+  let { slidesList, sliderCount, sliderButtons, sliderOffset } =
+    slideChangeParams;
+
   const slides = slidesList.querySelectorAll("li");
-  const offset =
-    slides[0].offsetWidth +
-    +window
-      .getComputedStyle(slidesList)
-      .getPropertyValue("gap")
-      .replace("px", "");
   const isParticipantsSlider =
     slidesList.classList.contains("participants__list");
+  const offset =
+    sliderOffset ||
+    slides[0].offsetWidth +
+      +window
+        .getComputedStyle(participantListElement)
+        .getPropertyValue("gap")
+        .replace("px", "");
 
   sliderCount++;
 
-  const isNextSlideButtonDisabled = isParticipantsSlider
-    ? sliderCount === slides.length - 3
-    : sliderCount === slides.length;
-  const isPrevButtonDisabled = isParticipantsSlider
-    ? sliderCount > slides.length - 3
-    : sliderCount > slides.length;
-
-  setButtonsDisabled(sliderButtons, true, isNextSlideButtonDisabled);
-
-  if (isPrevButtonDisabled) {
+  if (isParticipantsSlider && sliderCount > slides.length - 3) {
     sliderCount = 0;
-    sliderButtons.prevButton.disabled = true;
   }
+
+  const isNextButtonDisabled = isParticipantsSlider
+    ? sliderCount === slides.length - 3
+    : sliderCount === slides.length - 3;
+  const isPrevButtonDisabled = sliderCount === 0;
+
+  setButtonsDisabled(sliderButtons, isPrevButtonDisabled, isNextButtonDisabled);
 
   rollSlider(slidesList, offset, sliderCount);
 
   if (isParticipantsSlider) {
     participantsSlideNumber.textContent = sliderCount + 3;
+  } else {
+    changeToThisSlide(sliderCount);
   }
 
   return sliderCount;
 };
 
-const changeToPrevSlide = (slidesList, sliderCount, sliderButtons) => {
+const changeToPrevSlide = (slideChangeParams) => {
+  let { slidesList, sliderCount, sliderButtons, sliderOffset } =
+    slideChangeParams;
+
   const slides = slidesList.querySelectorAll("li");
+  const isParticipantsSlider =
+    slidesList.classList.contains("participants__list");
   const offset =
+    sliderOffset ||
     slides[0].offsetWidth +
-    +window
-      .getComputedStyle(slidesList)
-      .getPropertyValue("gap")
-      .replace("px", "");
+      +window
+        .getComputedStyle(participantListElement)
+        .getPropertyValue("gap")
+        .replace("px", "");
 
   sliderCount--;
-  const isPrevButtonDisabled = sliderCount === 0;
 
-  setButtonsDisabled(sliderButtons, false, isPrevButtonDisabled);
+  const isPrevButtonDisabled = sliderCount === 0;
+  const isNextButtonDisabled = isParticipantsSlider
+    ? sliderCount === slides.length - 3
+    : sliderCount === slides.length - 3;
+
+  setButtonsDisabled(sliderButtons, isPrevButtonDisabled, isNextButtonDisabled);
 
   rollSlider(slidesList, offset, sliderCount);
 
-  if (slidesList.classList.contains("participants__list")) {
+  if (isParticipantsSlider) {
     participantsSlideNumber.textContent = sliderCount + 3;
+  } else {
+    changeToThisSlide(sliderCount);
   }
 
   return sliderCount;
@@ -168,6 +232,10 @@ stagesCards.forEach((item, index) => {
   renderElement(stagesListElement, createStageCard, item, index);
 });
 
+for (let i = 0; i < stagesCards.length - 2; i++) {
+  renderElement(stageCircleButtons, createStageCircle, null, i);
+}
+
 participants.forEach((item) => {
   renderElement(participantListElement, createParticipantCard, item);
 });
@@ -176,25 +244,58 @@ setParticipantsCount();
 setParticipantsSlideNumber(participants.length - 3);
 
 setInterval(() => {
-  participantsSliderCount = changeToNextSlide(
-    participantListElement,
-    participantsSliderCount,
-    { nextButton: participantsNextButton, prevButton: participantsPrevButton }
-  );
+  participantsSliderCount = changeToNextSlide({
+    slidesList: participantListElement,
+    sliderCount: participantsSliderCount,
+    sliderButtons: {
+      prevButton: participantsPrevButton,
+      nextButton: participantsNextButton,
+    },
+  });
 }, 4000);
 
+stagesPrevButton.addEventListener("click", () => {
+  stagesSliderCount = changeToPrevSlide({
+    slidesList: stagesListElement,
+    sliderCount: stagesSliderCount,
+    sliderButtons: {
+      prevButton: stagesPrevButton,
+      nextButton: stagesNextButton,
+    },
+    sliderOffset: stagesSliderCount === 1 ? 375 : 355,
+  });
+});
+
+stagesNextButton.addEventListener("click", () => {
+  stagesSliderCount = changeToNextSlide({
+    slidesList: stagesListElement,
+    sliderCount: stagesSliderCount,
+    sliderButtons: {
+      prevButton: stagesPrevButton,
+      nextButton: stagesNextButton,
+    },
+    sliderOffset: stagesSliderCount === 0 ? 375 : 355,
+  });
+});
+
 participantsPrevButton.addEventListener("click", () => {
-  participantsSliderCount = changeToPrevSlide(
-    participantListElement,
-    participantsSliderCount,
-    { nextButton: participantsNextButton, prevButton: participantsPrevButton }
-  );
+  participantsSliderCount = changeToPrevSlide({
+    slidesList: participantListElement,
+    sliderCount: participantsSliderCount,
+    sliderButtons: {
+      prevButton: participantsPrevButton,
+      nextButton: participantsNextButton,
+    },
+  });
 });
 
 participantsNextButton.addEventListener("click", () => {
-  participantsSliderCount = changeToNextSlide(
-    participantListElement,
-    participantsSliderCount,
-    { nextButton: participantsNextButton, prevButton: participantsPrevButton }
-  );
+  participantsSliderCount = changeToNextSlide({
+    slidesList: participantListElement,
+    sliderCount: participantsSliderCount,
+    sliderButtons: {
+      prevButton: participantsPrevButton,
+      nextButton: participantsNextButton,
+    },
+  });
 });

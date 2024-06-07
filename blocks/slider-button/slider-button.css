@@ -1,4 +1,4 @@
-.participants__button {
+.slider-button {
   background-image: url("../../../images/participants-button-image.svg");
   background-color: #313131;
   background-repeat: no-repeat;
@@ -13,10 +13,10 @@
   transition: background-color 0.2s ease;
 }
 
-.participants__button:hover {
+.slider-button:hover {
   background-color: #fbce51;
 }
 
-.participants__button:disabled {
+.slider-button:disabled {
   background-color: #d6d6d6;
 }

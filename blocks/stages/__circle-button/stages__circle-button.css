@@ -1,0 +1,14 @@
+.stages__circle-button {
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.stages__circle-button:hover {
+  background-color: #313131;
+}
