@@ -1,4 +1,17 @@
 .lead {
   background-color: #e9ded4;
   padding-top: 60px;
+  position: relative;
+}
+
+@media screen and (max-width: 1159px) {
+  .lead {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .lead {
+    padding-top: 30px;
+  }
 }

@@ -22,8 +22,13 @@
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
 @import url(../blocks/lead/__nav-menu/lead__nav-menu.css);
 @import url(../blocks/lead/__nav-list/lead__nav-list.css);
+@import url(../blocks/lead/__nav-list_item/lead__nav-list_item.css);
 @import url(../blocks/lead/__nav-link/lead__nav-link.css);
 @import url(../blocks/lead/__nav-link/_type/lead__button_type_learn.css);
+@import url(../blocks/lead/__background/lead__background.css);
+@import url(../blocks/lead/__background-container/lead__background-container.css);
+@import url(../blocks/lead/__knight-image/lead__knight-image.css);
+@import url(../blocks/lead/__pawn-image/lead__pawn-image.css);
 
 @import url(../blocks/running-line/running-line.css);
 @import url(../blocks/running-line/__list/running-line__list.css);

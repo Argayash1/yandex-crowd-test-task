@@ -5,3 +5,9 @@
   display: flex;
   gap: 16px;
 }
+
+@media screen and (max-width: 685px) {
+  .lead__nav-list {
+    flex-direction: column;
+  }
+}

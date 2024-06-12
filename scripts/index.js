@@ -42,6 +42,19 @@ const participantCardTemplate = document
 
 let stagesSliderCount = 0;
 let participantsSliderCount = 0;
+let screenWidth = window.screen.width;
+let timeoutId;
+
+const handleResize = () => {
+  screenWidth = window.screen.width;
+};
+
+const delayedHandleResize = () => {
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(() => {
+    handleResize();
+  }, 500);
+};
 
 const createElement = () => {
   const elementElement = elementTemplate.cloneNode(true);
@@ -253,6 +266,8 @@ setInterval(() => {
     },
   });
 }, 4000);
+
+window.addEventListener("resize", delayedHandleResize);
 
 stagesPrevButton.addEventListener("click", () => {
   stagesSliderCount = changeToPrevSlide({

@@ -9,4 +9,6 @@
   padding-right: 12px;
   padding-top: 18px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 5;
 }

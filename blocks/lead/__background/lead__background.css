@@ -1,0 +1,35 @@
+.lead__background {
+  position: relative;
+  width: 1628px;
+  height: 700px;
+  z-index: 2;
+  background-image: url("../../../images/lead-baclground-image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-49.3%);
+}
+
+@media screen and (max-width: 1260px) {
+  .lead__background {
+    width: 1563px;
+    height: 664px;
+  }
+}
+
+@media screen and (max-width: 1159px) {
+  .lead__background {
+    width: 1477px;
+    height: 626px;
+    transform: translateX(-46.2%);
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .lead__background {
+    width: 1345px;
+    height: 564px;
+    transform: translateX(-41.2%);
+  }
+}

@@ -7,9 +7,16 @@
   position: relative;
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1182px) {
   .content-wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media screen and (max-width: 917px) {
+  .content-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }

@@ -1,7 +1,13 @@
 .stages__buttons-container {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 16px;
   margin-top: 28px;
   margin-left: 79px;
+}
+
+@media screen and (max-width: 739px) {
+  .stages__buttons-container {
+    display: flex;
+  }
 }

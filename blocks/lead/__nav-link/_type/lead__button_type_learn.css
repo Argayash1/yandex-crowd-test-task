@@ -8,3 +8,11 @@
   color: #fff;
   background-color: #1f1f1f;
 }
+
+@media screen and (max-width: 685px) {
+  .lead__nav-link_type_learn {
+    background-color: #fff;
+    border: none;
+    opacity: 0.9;
+  }
+}

@@ -2,5 +2,36 @@
   margin-bottom: 130px;
   position: relative;
   z-index: 4;
-  width: max-content;
+  max-width: 542px;
+  position: relative;
 }
+
+@media screen and (max-width: 1260px) {
+  .lead__nav-menu {
+    max-width: 484px;
+  }
+}
+
+@media screen and (max-width: 1159px) {
+  .lead__nav-menu {
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .lead__nav-menu {
+    max-width: 396px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .lead__nav-menu {
+    margin-bottom: 90px;
+  }
+}
+
+/* @media screen and (max-width: 685px) {
+  .lead__nav-menu {
+    max-width: 335px;
+  }
+} */

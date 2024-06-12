@@ -1,0 +1,10 @@
+.lead__pawn-image {
+  position: absolute;
+  bottom: 81px;
+  left: 50%;
+  margin-left: 557px;
+  background-image: url("../../../images/lead-pawn-image.png");
+  width: 82.61px;
+  height: 122.22px;
+  z-index: 4;
+}

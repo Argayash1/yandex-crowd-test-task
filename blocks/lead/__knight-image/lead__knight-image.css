@@ -1,0 +1,11 @@
+.lead__knight-image {
+  width: 187.87px;
+  height: 243.99px;
+  background-image: url("../../../images/lead-knight-image.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 4;
+  bottom: 34px;
+  left: 50%;
+  margin-left: 154px;
+}

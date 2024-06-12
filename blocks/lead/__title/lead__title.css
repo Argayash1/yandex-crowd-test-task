@@ -1,5 +1,4 @@
 .lead__title {
-  max-width: 542px;
   font-size: 60px;
   line-height: 1.1;
   font-weight: 400;
@@ -8,11 +7,26 @@
   text-transform: uppercase;
   position: relative;
   z-index: 4;
+  max-width: 542px;
 }
 
-@media screen and (max-width: 1259px) {
+@media screen and (max-width: 1260px) {
   .lead__title {
-    font-size: 54px;
-    max-width: 486px;
+    font-size: 52px;
+    max-width: 484px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .lead__title {
+    font-size: 44px;
+    max-width: 396px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .lead__title {
+    font-size: 36px;
+    max-width: 335px;
   }
 }
