@@ -4,6 +4,9 @@
   font-family: "Merriweather", "Helvetica Neue", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
 }
 
 .running-line__list-item::after {
@@ -15,4 +18,14 @@
   position: absolute;
   right: -18px;
   top: 9px;
+}
+
+@media screen and (max-width: 622px) {
+  .running-line__list-item {
+    font-size: 16px;
+  }
+
+  .running-line__list-item::after {
+    top: 6px;
+  }
 }

@@ -4,3 +4,10 @@
   display: inline-block;
   margin: 0;
 }
+
+@media screen and (max-width: 685px) {
+  .header__logo {
+    width: 213px;
+    height: 32px;
+  }
+}

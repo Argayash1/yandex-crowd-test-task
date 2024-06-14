@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0 0 0 100%;
   animation: slide 10s linear infinite;
+  font-size: 0;
 }
 
 @keyframes slide {

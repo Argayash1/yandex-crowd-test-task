@@ -1,3 +1,9 @@
 .lead__nav-list_item {
   width: 50%;
 }
+
+@media screen and (max-width: 685px) {
+  .lead__nav-list_item {
+    width: 100%;
+  }
+}

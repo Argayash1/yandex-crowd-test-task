@@ -3,3 +3,11 @@
   display: inline-block;
   width: 100%;
 }
+
+@media screen and (max-width: 685px) {
+  .lead__span {
+    width: 216px;
+    margin-left: 63px;
+    min-height: 40px;
+  }
+}

@@ -20,3 +20,10 @@
     padding-right: 25px;
   }
 }
+
+@media screen and (max-width: 685px) {
+  .content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

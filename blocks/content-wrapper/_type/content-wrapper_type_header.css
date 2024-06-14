@@ -2,3 +2,9 @@
   height: 100%;
   padding-top: 26px;
 }
+
+@media screen and (max-width: 685px) {
+  .content-wrapper_type_header {
+    padding-top: 18px;
+  }
+}

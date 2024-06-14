@@ -3,7 +3,7 @@
   width: 1628px;
   height: 700px;
   z-index: 2;
-  background-image: url("../../../images/lead-baclground-image.png");
+  background-image: url("../../../images/lead-city-image.png");
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 64px;
@@ -13,23 +13,49 @@
 
 @media screen and (max-width: 1260px) {
   .lead__background {
-    width: 1563px;
-    height: 664px;
+    width: 1556px;
+    height: 657px;
   }
 }
 
 @media screen and (max-width: 1159px) {
   .lead__background {
-    width: 1477px;
-    height: 626px;
+    width: 1468px;
+    height: 617px;
     transform: translateX(-46.2%);
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .lead__background {
+    width: 1452px;
+    height: 601px;
   }
 }
 
 @media screen and (max-width: 877px) {
   .lead__background {
-    width: 1345px;
-    height: 564px;
+    width: 1357px;
+    height: 576px;
     transform: translateX(-41.2%);
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .lead__background {
+    width: 1364px;
+    height: 583px;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .lead__background {
+    width: 942.53px;
+    height: 384.81px;
+    transform: none;
+    position: absolute;
+    bottom: 38px;
+    left: initial;
+    right: -160px;
   }
 }

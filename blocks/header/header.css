@@ -6,3 +6,9 @@
   padding: 0;
   margin: 0;
 }
+
+@media screen and (max-width: 685px) {
+  .header {
+    height: 50px;
+  }
+}

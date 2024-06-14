@@ -26,12 +26,18 @@
 
 @media screen and (max-width: 877px) {
   .lead__nav-menu {
-    margin-bottom: 90px;
+    margin-bottom: 95px;
   }
 }
 
-/* @media screen and (max-width: 685px) {
+@media screen and (max-width: 685px) {
   .lead__nav-menu {
     max-width: 335px;
   }
-} */
+}
+
+@media screen and (max-width: 622px) {
+  .lead__nav-menu {
+    margin-bottom: 290px;
+  }
+}

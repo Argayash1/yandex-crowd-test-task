@@ -5,10 +5,15 @@
   white-space: nowrap;
   height: 60px;
   display: flex;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 18px;
+  padding: 18px 12px 0 12px;
   box-sizing: border-box;
   position: relative;
   z-index: 5;
+}
+
+@media screen and (max-width: 622px) {
+  .running-line {
+    height: 38px;
+    padding-top: 10px;
+  }
 }
