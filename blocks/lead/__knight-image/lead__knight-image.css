@@ -8,5 +8,20 @@
   bottom: 34px;
   left: 50%;
   margin-left: 154px;
-  display: none;
+}
+
+@media screen and (max-width: 1260px) {
+  .lead__knight-image {
+    width: 179.56246px;
+    height: 233.20122px;
+    bottom: 41px;
+    margin-left: 125px;
+  }
+}
+
+@media screen and (max-width: 1106px) {
+  .lead__knight-image {
+    width: 168.92px;
+    height: 219.5px;
+  }
 }

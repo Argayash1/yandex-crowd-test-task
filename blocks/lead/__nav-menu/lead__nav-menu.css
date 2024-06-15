@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (max-width: 1159px) {
+@media screen and (max-width: 1106px) {
   .lead__nav-menu {
     margin-bottom: 110px;
   }
@@ -38,6 +38,6 @@
 
 @media screen and (max-width: 622px) {
   .lead__nav-menu {
-    margin-bottom: 290px;
+    margin-bottom: 291px;
   }
 }

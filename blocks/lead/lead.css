@@ -4,7 +4,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 1159px) {
+@media screen and (max-width: 1106px) {
   .lead {
     padding-top: 40px;
   }

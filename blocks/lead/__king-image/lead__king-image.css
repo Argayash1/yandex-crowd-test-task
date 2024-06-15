@@ -1,0 +1,26 @@
+.lead__king-image {
+  background-image: url("../../../images/lead-king-image.png");
+  background-repeat: no-repeat;
+  width: 128.16px;
+  height: 252.44px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: 380px;
+}
+
+@media screen and (max-width: 1260px) {
+  .lead__king-image {
+    width: 122.5px;
+    height: 241.29px;
+    margin-left: 341px;
+    top: 78px;
+  }
+}
+
+@media screen and (max-width: 1106px) {
+  .lead__king-image {
+    width: 115.15 px;
+    height: 226.64px;
+  }
+}

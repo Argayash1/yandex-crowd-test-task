@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width: 1159px) {
+@media screen and (max-width: 1106px) {
   .lead__background {
     width: 1468px;
     height: 617px;
@@ -50,8 +50,8 @@
 
 @media screen and (max-width: 622px) {
   .lead__background {
-    width: 942.53px;
-    height: 384.81px;
+    width: 939px;
+    height: 382px;
     transform: none;
     position: absolute;
     bottom: 38px;

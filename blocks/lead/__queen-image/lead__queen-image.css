@@ -1,0 +1,26 @@
+.lead__queen-image {
+  background-image: url("../../../images/lead-queen-image.png");
+  background-repeat: no-repeat;
+  width: 128.78px;
+  height: 255.89px;
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  margin-left: 49px;
+}
+
+@media screen and (max-width: 1260px) {
+  .lead__queen-image {
+    width: 123.082px;
+    height: 244.58px;
+    top: 180px;
+    margin-left: 28px;
+  }
+}
+
+@media screen and (max-width: 1106px) {
+  .lead__queen-image {
+    width: 121px;
+    height: 240.37px;
+  }
+}
