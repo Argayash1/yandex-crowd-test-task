@@ -16,3 +16,11 @@
     margin-left: 511px;
   }
 }
+
+@media screen and (max-width: 1106px) {
+  .lead__pawn-image {
+    width: 74.2px;
+    height: 109.8px;
+    margin-left: 504px;
+  }
+}

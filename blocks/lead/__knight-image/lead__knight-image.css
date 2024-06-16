@@ -21,7 +21,10 @@
 
 @media screen and (max-width: 1106px) {
   .lead__knight-image {
+    background-size: contain;
     width: 168.92px;
     height: 219.5px;
+    bottom: 26px;
+    margin-left: 162px;
   }
 }

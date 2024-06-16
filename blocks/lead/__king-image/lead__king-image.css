@@ -20,7 +20,19 @@
 
 @media screen and (max-width: 1106px) {
   .lead__king-image {
-    width: 115.15 px;
+    background-size: contain;
+    width: 115.15px;
     height: 226.64px;
+    margin-left: 369px;
+    top: 92px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .lead__king-image {
+    width: 112.92px;
+    height: 222.21px;
+    margin-left: 348px;
+    top: 87px;
   }
 }

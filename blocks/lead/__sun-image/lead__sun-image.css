@@ -25,3 +25,11 @@
     margin-left: 26px;
   }
 }
+
+@media screen and (max-width: 1015px) {
+  .lead__sun-image {
+    width: 582.41px;
+    height: 582.41px;
+    margin-left: 20px;
+  }
+}
