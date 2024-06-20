@@ -26,3 +26,32 @@
     margin-left: 64px;
   }
 }
+
+@media screen and (max-width: 1015px) {
+  .lead__queen-image {
+    width: 118.58px;
+    height: 235.16px;
+    top: 144px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .lead__queen-image {
+    width: 112px;
+    height: 222px;
+    top: 133px;
+    margin-left: 128px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .lead__queen-image {
+    background-size: contain;
+    width: 55.44px;
+    height: 116.98px;
+    top: initial;
+    bottom: 151px;
+    margin-left: -123px;
+  }
+}

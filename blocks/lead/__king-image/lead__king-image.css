@@ -32,7 +32,29 @@
   .lead__king-image {
     width: 112.92px;
     height: 222.21px;
-    margin-left: 348px;
+    margin-left: 349px;
     top: 87px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .lead__king-image {
+    width: 106.78px;
+    height: 210px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .lead__king-image {
+    display: block;
+    width: 56.98px;
+    height: 104.8px;
+    top: initial;
+    bottom: 205px;
+    left: initial;
+    right: 88px;
+    margin-left: 0;
+    transform: rotate(8deg);
   }
 }

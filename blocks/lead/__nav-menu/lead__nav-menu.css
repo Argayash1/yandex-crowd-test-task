@@ -33,11 +33,12 @@
 @media screen and (max-width: 685px) {
   .lead__nav-menu {
     max-width: 335px;
-  }
-}
-
-@media screen and (max-width: 622px) {
-  .lead__nav-menu {
     margin-bottom: 291px;
   }
 }
+
+/* @media screen and (max-width: 622px) {
+  .lead__nav-menu {
+    margin-bottom: 291px;
+  }
+} */

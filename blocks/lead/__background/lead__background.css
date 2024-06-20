@@ -41,14 +41,14 @@
   }
 }
 
-@media screen and (max-width: 685px) {
+/* @media screen and (max-width: 685px) {
   .lead__background {
     width: 1364px;
     height: 583px;
   }
-}
+} */
 
-@media screen and (max-width: 622px) {
+@media screen and (max-width: 685px) {
   .lead__background {
     width: 939px;
     height: 382px;

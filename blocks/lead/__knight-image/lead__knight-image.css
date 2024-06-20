@@ -24,7 +24,25 @@
     background-size: contain;
     width: 168.92px;
     height: 219.5px;
-    bottom: 26px;
+    bottom: 18px;
     margin-left: 162px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .lead__knight-image {
+    width: 165.54px;
+    height: 215.61px;
+    bottom: 19px;
+    margin-left: 149px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .lead__knight-image {
+    width: 156.6px;
+    height: 203.87px;
+    bottom: 14px;
+    margin-left: 226px;
   }
 }

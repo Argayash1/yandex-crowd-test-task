@@ -20,7 +20,23 @@
   top: 9px;
 }
 
-@media screen and (max-width: 622px) {
+@media screen and (max-width: 1106px) {
+  .running-line__list-item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .running-line__list-item {
+    font-size: 18px;
+  }
+
+  .running-line__list-item::after {
+    top: 7.5px;
+  }
+}
+
+@media screen and (max-width: 685px) {
   .running-line__list-item {
     font-size: 16px;
   }

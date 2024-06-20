@@ -33,3 +33,22 @@
     margin-left: 20px;
   }
 }
+
+@media screen and (max-width: 877px) {
+  .lead__sun-image {
+    width: 551.22px;
+    height: 551.22px;
+    margin-left: 104px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .lead__sun-image {
+    width: 297.47px;
+    height: 297.47px;
+    top: initial;
+    bottom: 93px;
+    left: initial;
+    right: 51px;
+  }
+}
