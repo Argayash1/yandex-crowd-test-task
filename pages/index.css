@@ -27,9 +27,6 @@
 @import url(../blocks/lead/__nav-link/_type/lead__button_type_learn.css);
 @import url(../blocks/lead/__background-container/lead__background-container.css);
 @import url(../blocks/lead/__background/lead__background.css);
-@import url(../blocks/lead/__sun-image/lead__sun-image.css);
-@import url(../blocks/lead/__queen-image/lead__queen-image.css);
-@import url(../blocks/lead/__king-image/lead__king-image.css);
 @import url(../blocks/lead/__knight-image/lead__knight-image.css);
 @import url(../blocks/lead/__pawn-image/lead__pawn-image.css);
 

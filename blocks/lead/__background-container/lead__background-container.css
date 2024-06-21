@@ -17,7 +17,7 @@
   bottom: 60px;
   left: 0;
   z-index: 2;
-  background-image: url("../../../images/lead-background.png");
+  background-image: url("../../../images/lead-background-mask.png");
   mix-blend-mode: color-burn;
 }
 
