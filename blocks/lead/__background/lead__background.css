@@ -13,16 +13,9 @@
 
 @media screen and (max-width: 1260px) {
   .lead__background {
-    width: 1556px;
-    height: 657px;
-  }
-}
-
-@media screen and (max-width: 1106px) {
-  .lead__background {
-    width: 1468px;
-    height: 617px;
-    transform: translateX(-46.2%);
+    width: 1546px;
+    height: 647px;
+    transform: translateX(-45%);
   }
 }
 
@@ -30,32 +23,28 @@
   .lead__background {
     width: 1452px;
     height: 601px;
+    transform: translateX(-42.3%);
   }
 }
 
-@media screen and (max-width: 877px) {
+@media screen and (max-width: 722px) {
   .lead__background {
-    width: 1357px;
-    height: 576px;
-    transform: translateX(-41.2%);
+    width: 1411px;
+    height: 619px;
+    transform: translateX(-44.1%);
   }
 }
 
-/* @media screen and (max-width: 685px) {
+@media screen and (max-width: 600px) {
   .lead__background {
-    width: 1364px;
-    height: 583px;
-  }
-} */
-
-@media screen and (max-width: 685px) {
-  .lead__background {
-    width: 939px;
-    height: 382px;
+    width: 888px;
+    height: 376px;
     transform: none;
     position: absolute;
-    bottom: 38px;
+    bottom: 23px;
     left: initial;
-    right: -160px;
+    right: -96px;
+    /* right: 0; */
+    background-image: url("../../../images/lead-background-image-mobile.png");
   }
 }

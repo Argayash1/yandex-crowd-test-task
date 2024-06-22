@@ -20,17 +20,18 @@
 @media screen and (max-width: 1015px) {
   .lead__subtitle {
     max-width: 396px;
-  }
-}
-
-@media screen and (max-width: 877px) {
-  .lead__subtitle {
-    max-width: 335px;
     text-align: left;
   }
 }
 
-@media screen and (max-width: 685px) {
+/* @media screen and (max-width: 877px) {
+  .lead__subtitle {
+    max-width: 335px;
+    text-align: left;
+  }
+} */
+
+@media screen and (max-width: 722px) {
   .lead__subtitle {
     margin-bottom: 32px;
     height: 69px;
