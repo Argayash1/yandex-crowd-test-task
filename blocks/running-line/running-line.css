@@ -11,21 +11,21 @@
   z-index: 5;
 }
 
-@media screen and (max-width: 1106px) {
+@media screen and (max-width: 1260px) {
   .running-line {
     height: 52px;
     padding-top: 15px;
   }
 }
 
-@media screen and (max-width: 877px) {
+@media screen and (max-width: 722px) {
   .running-line {
     height: 45px;
     padding-top: 13px;
   }
 }
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 600px) {
   .running-line {
     height: 38px;
     padding-top: 10px;

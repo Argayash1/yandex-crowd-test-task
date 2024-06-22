@@ -11,17 +11,15 @@
 
 @media screen and (max-width: 1260px) {
   .lead__pawn-image {
-    width: 78.9618px;
-    height: 116.8172px;
-    margin-left: 511px;
+    width: 76.83px;
+    height: 113.67px;
+    margin-left: 561px;
+    bottom: 74px;
   }
 }
 
-@media screen and (max-width: 1106px) {
+@media screen and (max-width: 1125px) {
   .lead__pawn-image {
-    width: 74.2px;
-    height: 109.8px;
-    margin-left: 523px;
-    bottom: 72px;
+    display: none;
   }
 }

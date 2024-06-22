@@ -12,38 +12,37 @@
 
 @media screen and (max-width: 1260px) {
   .lead__knight-image {
-    width: 179.56246px;
-    height: 233.20122px;
-    bottom: 41px;
-    margin-left: 125px;
-  }
-}
-
-@media screen and (max-width: 1106px) {
-  .lead__knight-image {
-    background-size: contain;
-    width: 168.92px;
-    height: 219.5px;
-    bottom: 18px;
-    margin-left: 162px;
+    width: 174.72px;
+    height: 220.91px;
+    margin-left: 186px;
   }
 }
 
 @media screen and (max-width: 1015px) {
   .lead__knight-image {
-    width: 165.54px;
-    height: 215.61px;
-    bottom: 19px;
-    margin-left: 149px;
+    background-size: contain;
+    width: 171.2px;
+    height: 218px;
+    bottom: 20px;
+    margin-left: 205px;
   }
 }
 
-@media screen and (max-width: 877px) {
+@media screen and (max-width: 722px) {
   .lead__knight-image {
-    width: 156.6px;
-    height: 203.87px;
-    bottom: 14px;
-    margin-left: 226px;
-    display: none;
+    width: 167.776px;
+    height: 213.64px;
+    bottom: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lead__knight-image {
+    width: 103px;
+    height: 121.63px;
+    bottom: 30px;
+    left: initial;
+    right: 128px;
+    margin-left: 0;
   }
 }
